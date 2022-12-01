@@ -17,13 +17,13 @@ For example:
     $ clj -M:test -n aoc.day01-test
 
     # only test the day01 with babashka (uses clj internaly)
-    $ bb run test -n aoc.day01-test
+    $ bb test -n aoc.day01-test
 
     # all test with clj
     $ clj -M:test
 
     # all test with babashka (use clj internaly)
-    $ bb run test
+    $ bb test
 
 Happy coding!
 

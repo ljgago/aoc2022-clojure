@@ -3,7 +3,7 @@
   (:require [aoc.day02 :as day02]))
 
 (def input "A Y\nB X\nC Z")
-(def parse-expected [["A" "Y"] ["B" "X"] ["C" "Z"]])
+(def parse-expected ["A Y" "B X" "C Z"])
 
 (deftest parser
   (testing "test parser"

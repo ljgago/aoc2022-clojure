@@ -12,8 +12,8 @@
   "Get the priority from a char value"
   [val]
   (cond
-    (re-find #"[a-z]" (str val)) (+ 1 (- (int val) (int \a)))
-    (re-find #"[A-Z]" (str val)) (+ 27 (- (int val) (int \A)))))
+    (re-find #"[a-z]" (str val)) (- (int val) 96)
+    (re-find #"[A-Z]" (str val)) (- (int val) 38)))
 
 (defn part1 [input]
   (->>

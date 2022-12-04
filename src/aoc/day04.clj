@@ -12,7 +12,7 @@
 ;; part one
 (defn fully-contains
   "[la-lb,ra-rb]
-  la: left a, lb: left b, ra: right a, rb: right"
+  la: left a, lb: left b, ra: right a, rb: right b"
   [[la lb ra rb]]
   (cond
     (and (<= la ra) (>= lb rb)) 1
@@ -28,7 +28,7 @@
 ;; part two
 (defn overlap-all
   "[la-lb,ra-rb]
-  la: left a, lb: left b, ra: right a, rb: right"
+  la: left a, lb: left b, ra: right a, rb: right b"
   [[la lb ra rb]]
   (cond
     (and (>= lb ra) (<= la rb)) 1
